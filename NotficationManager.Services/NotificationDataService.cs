@@ -34,14 +34,14 @@ namespace NotficationManager.Services
 
         public async Task RemoveNotification(string id)
         {
-            var notification = _dbContext.Notifications.Where(x => x.ID.ToString() == id).FirstOrDefault();
+            var notification = await _dbContext.Notifications.AsNoTracking().Where(x => x.ID.ToString() == id).FirstOrDefaultAsync();
             _dbContext.Notifications.Remove(notification);
             await _dbContext.SaveChangesAsync();
         }
 
         public async Task RemoveNotifications(List<string> notificationIDS)
         {
-            var notificationsList = _dbContext.Notifications.Where(x => notificationIDS.Contains(x.ID.ToString())).ToList();
+            var notificationsList = _dbContext.Notifications.AsNoTracking().Where(x => notificationIDS.Contains(x.ID.ToString())).ToList();
             _dbContext.Notifications.RemoveRange(notificationsList);
             await _dbContext.SaveChangesAsync();
         }
