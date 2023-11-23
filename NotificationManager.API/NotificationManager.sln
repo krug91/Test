@@ -3,22 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationManager.API", "NotificationManager.API.csproj", "{069AD383-5DD0-47E2-A837-84E3CC50AF54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotificationManager.Server", "NotificationManager.Server.csproj", "{069AD383-5DD0-47E2-A837-84E3CC50AF54}"
 	ProjectSection(ProjectDependencies) = postProject
 		{53547996-2917-4702-BC5B-5C5EC8C1E7FB} = {53547996-2917-4702-BC5B-5C5EC8C1E7FB}
 		{80BA838C-9DD2-4A16-BBF5-D1EF8296AD2F} = {80BA838C-9DD2-4A16-BBF5-D1EF8296AD2F}
 		{D444B203-8095-4B5D-9E06-A7276F3B977F} = {D444B203-8095-4B5D-9E06-A7276F3B977F}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotficationManager.Services", "..\NotficationManager.Services\NotficationManager.Services.csproj", "{80BA838C-9DD2-4A16-BBF5-D1EF8296AD2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotficationManager.Services", "..\NotficationManager.Services\NotficationManager.Services.csproj", "{80BA838C-9DD2-4A16-BBF5-D1EF8296AD2F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{53547996-2917-4702-BC5B-5C5EC8C1E7FB} = {53547996-2917-4702-BC5B-5C5EC8C1E7FB}
 		{D444B203-8095-4B5D-9E06-A7276F3B977F} = {D444B203-8095-4B5D-9E06-A7276F3B977F}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationManager.Interfaces", "..\NotificationManager.Interfaces\NotificationManager.Interfaces.csproj", "{D444B203-8095-4B5D-9E06-A7276F3B977F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotificationManager.Interfaces", "..\NotificationManager.Interfaces\NotificationManager.Interfaces.csproj", "{D444B203-8095-4B5D-9E06-A7276F3B977F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationManager.EF", "..\NotificationManager.EF\NotificationManager.EF.csproj", "{53547996-2917-4702-BC5B-5C5EC8C1E7FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotificationManager.EF", "..\NotificationManager.EF\NotificationManager.EF.csproj", "{53547996-2917-4702-BC5B-5C5EC8C1E7FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
