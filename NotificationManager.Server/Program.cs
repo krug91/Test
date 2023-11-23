@@ -29,14 +29,14 @@ namespace NotificationManager
                 app.UseSwagger();
                 app.UseSwaggerUI();
 
-                using (var serviceScope = app.Services.GetRequiredService<IServiceScopeFactory>().CreateScope())
-                {
-                    //MIGRATE DB
-                    var context = serviceScope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-                    context.Database.Migrate();
-                }
-
                 app.UseDeveloperExceptionPage();
+            }
+
+            using (var serviceScope = app.Services.GetRequiredService<IServiceScopeFactory>().CreateScope())
+            {
+                //MIGRATE DB
+                var context = serviceScope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+                context.Database.Migrate();
             }
 
             app.UseHttpsRedirection();
