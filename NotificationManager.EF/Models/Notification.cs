@@ -31,7 +31,7 @@ namespace NotificationManager.EF.Models
         public string Url { get; set; }
         public DateTime DateFrom { get; set; }
         public DateTime? DateTo { get; set; }
-        public bool Active { get; set; }
+        public bool Active { get; set; } = true;
         [MaxLength(255)]
         public string ProductInclude { get; set; }
         [MaxLength(255)]
