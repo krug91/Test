@@ -20,7 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\NotficationManager.Services\NotficationManager.Services.csproj" />
     <ProjectReference Include="..\NotificationManager.EF\NotificationManager.EF.csproj" />
+    <ProjectReference Include="..\NotificationManager.Interfaces\NotificationManager.Interfaces.csproj" />
   </ItemGroup>
 
 </Project>

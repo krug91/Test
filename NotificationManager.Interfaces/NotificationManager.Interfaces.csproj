@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NotificationManager.EF\NotificationManager.EF.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -17,6 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotficationManager.Services
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotificationManager.Interfaces", "..\NotificationManager.Interfaces\NotificationManager.Interfaces.csproj", "{D444B203-8095-4B5D-9E06-A7276F3B977F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{53547996-2917-4702-BC5B-5C5EC8C1E7FB} = {53547996-2917-4702-BC5B-5C5EC8C1E7FB}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotificationManager.EF", "..\NotificationManager.EF\NotificationManager.EF.csproj", "{53547996-2917-4702-BC5B-5C5EC8C1E7FB}"
 EndProject

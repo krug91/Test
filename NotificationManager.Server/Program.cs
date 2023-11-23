@@ -1,6 +1,8 @@
 
 using Microsoft.EntityFrameworkCore;
+using NotficationManager.Services;
 using NotificationManager.EF;
+using NotificationManager.Interfaces;
 using System.Data;
 
 namespace NotificationManager
@@ -20,6 +22,8 @@ namespace NotificationManager
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
                                  options => options.MigrationsAssembly("NotificationManager.EF").EnableRetryOnFailure().CommandTimeout(120)).EnableSensitiveDataLogging());
+
+            builder.Services.AddScoped<INotificationDataService, NotificationDataService>();
 
             var app = builder.Build();
 
